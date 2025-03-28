@@ -1,0 +1,48 @@
+# Node.js
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+
+# macOS
+.DS_Store
+
+# Logs
+logs/
+*.log
+*.log.*
+
+# Editor-specific
+.vscode/
+.idea/
+*.swp
+*.swo
+*.swn
+
+# Build output
+dist/
+build/
+out/
+
+# Environment variables
+.env
+.env.*.local
+
+# Temporary files
+*.tmp
+*.temp
+*.bak
+*.orig
+
+# Coverage
+coverage/
+
+# Miscellaneous
+*.tgz
+*.zip
+*.tar
+*.gz

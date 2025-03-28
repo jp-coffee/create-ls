@@ -1,0 +1,61 @@
+name: "Bug Report"
+description: "Report a bug to help us improve createLS."
+labels: ["bug", "triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for taking the time to report a bug! Please fill out the details below to help us diagnose and fix the issue in **createLS**.
+
+  - type: input
+    id: title
+    attributes:
+      label: "Bug Title"
+      description: "A short and clear title for the issue."
+      placeholder: "createLS not updating local storage in real-time"
+    validations:
+      required: true
+
+  - type: textarea
+    id: description
+    attributes:
+      label: "Description"
+      description: "Describe the issue, including expected and actual behavior."
+      placeholder: "When using `createLS`, the state does not update across tabs."
+    validations:
+      required: true
+
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: "Reproduction"
+      description: "Provide a minimal, reproducible example (code snippet or link to a repository)."
+      placeholder: "Steps to reproduce: 1. Open two tabs, 2. Update value using createLS, 3. Value does not sync."
+    validations:
+      required: true
+
+  - type: input
+    id: environment
+    attributes:
+      label: "Environment"
+      description: "Provide relevant environment details."
+      placeholder: "React 18, Chrome 120, Windows 11"
+    validations:
+      required: true
+
+  - type: textarea
+    id: logs
+    attributes:
+      label: "Logs & Screenshots"
+      description: "If applicable, add console errors or screenshots."
+      placeholder: "Console error: 'createLS is undefined'"
+
+  - type: checkboxes
+    id: acknowledgements
+    attributes:
+      label: "Acknowledgements"
+      options:
+        - label: "I have searched existing issues before opening this."
+          required: true
+        - label: "I have read the documentation and followed the usage guide."
+          required: true

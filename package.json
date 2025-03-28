@@ -1,7 +1,7 @@
 {
   "name": "create-ls",
   "displayName": "Create React Local Storage State",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A simple state manager for local storage in React applications.",
   "publishConfig": {
     "access": "public",
@@ -14,10 +14,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/jp-coffee/ls-state.git"
+    "url": "https://github.com/jp-coffee/create-ls.git"
   },
   "bugs": {
-    "url": "https://github.com/jp-coffee/ls-state/issues"
+    "url": "https://github.com/jp-coffee/create-ls/issues"
   },
   "files": [
     "dist"

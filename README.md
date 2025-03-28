@@ -1,10 +1,11 @@
 ![create-ls Banner](https://raw.githubusercontent.com/jp-coffee/create-ls/main/media/create-ls-banner.png)
+
 **Persistent, Real-Time Storage for React – No State Management Needed** Automatically sync local storage across components, tabs, and sessions with ease.
 
 [![npm version](https://img.shields.io/npm/v/create-ls.svg)](https://www.npmjs.com/package/create-ls)
+[![npm downloads](https://img.shields.io/npm/dt/create-ls.svg)](https://www.npmjs.com/package/create-ls)
 [![License](https://img.shields.io/github/license/jp-coffee/create-ls)](LICENSE)
 [![Tests Status](https://img.shields.io/github/actions/workflow/status/jp-coffee/create-ls/lint-and-test.yml?branch=main)](https://github.com/jp-coffee/create-ls/actions)
-[![Build Status](https://img.shields.io/github/actions/workflow/status/jp-coffee/create-ls/publish.yml?branch=main)](https://github.com/jp-coffee/create-ls/actions)
 
 ## 🚀 Features
 

@@ -1,5 +1,4 @@
-![create-ls Banner](./media//create-ls-banner.png)
-
+![create-ls Banner](https://raw.githubusercontent.com/jp-coffee/create-ls/main/media/create-ls-banner.png)
 **Persistent, Real-Time Storage for React – No State Management Needed** Automatically sync local storage across components, tabs, and sessions with ease.
 
 [![npm version](https://img.shields.io/npm/v/create-ls.svg)](https://www.npmjs.com/package/create-ls)

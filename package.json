@@ -1,7 +1,7 @@
 {
   "name": "create-ls",
   "displayName": "Create React Local Storage State",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A simple state manager for local storage in React applications.",
   "publishConfig": {
     "access": "public",

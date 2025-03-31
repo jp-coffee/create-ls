@@ -24,16 +24,16 @@ Install via your preferred package manager:
 
 ```sh
 # npm
-npm install ls-state
+npm install create-ls
 
 # yarn
-yarn add ls-state
+yarn add create-ls
 
 # pnpm
-pnpm add ls-state
+pnpm add create-ls
 
 # bun
-bun add ls-state
+bun add create-ls
 ```
 
 ### Basic Usage
@@ -41,7 +41,7 @@ bun add ls-state
 ```tsx
 "use client";
 
-import { createLS } from "ls-state";
+import { createLS } from "create-ls";
 
 const Page: React.FC = () => {
   const counter = createLS("count", 0);
@@ -122,7 +122,7 @@ A boolean indicating whether the key exists in local storage.
 ```tsx
 "use client";
 
-import { createLS } from "ls-state";
+import { createLS } from "create-ls";
 
 const Page: React.FC = () => {
   const counter = createLS("count", 0);
@@ -150,7 +150,7 @@ export default Page;
 ```tsx
 "use client";
 
-import { createLS } from "ls-state";
+import { createLS } from "create-ls";
 
 const Page: React.FC = () => {
   const counter1 = createLS("count1", 0);

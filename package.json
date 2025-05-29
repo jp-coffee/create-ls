@@ -1,7 +1,7 @@
 {
   "name": "create-ls",
   "displayName": "Create React Local Storage State",
-  "version": "1.0.3",
+  "version": "1.1.0",
   "description": "A simple state manager for local storage in React applications.",
   "publishConfig": {
     "access": "public",
@@ -35,7 +35,8 @@
     "lint:fix": "eslint . --ext .ts,.tsx --fix",
     "prebuild": "npm run clean",
     "test": "vitest run",
-    "test:watch": "vitest --watch"
+    "test:watch": "vitest --watch",
+    "typecheck": "tsc --noEmit"
   },
   "devDependencies": {
     "@testing-library/jest-dom": "^6.6.3",

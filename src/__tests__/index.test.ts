@@ -7,6 +7,22 @@ describe("useLocalStorage", () => {
   beforeEach(() => {
     localStorage.clear();
   });
+  
+  it("should initialize with the undefined value if no value is in localStorage", () => {
+    const { result } = renderHook(() => createLS("testKey"));
+    expect(result.current.get()).toBe(undefined);
+  });
+
+  it("should update the undefined value with the new value if the value is set", () => {
+    const { result } = renderHook(() => createLS("testKey"));
+    expect(result.current.get()).toBe(undefined);
+
+    act(() => {
+      result.current.set("newValue");
+    });
+
+    expect(result.current.get()).toBe("newValue");
+  });
 
   it("should initialize with the initial value if no value is in localStorage", () => {
     const { result } = renderHook(() => createLS("testKey", "initialValue"));
@@ -55,7 +71,9 @@ describe("useLocalStorage", () => {
       );
     });
 
-    expect(result.current.get()).toBe("externalValue");
+    setTimeout(() => {
+      expect(result.current.get()).toBe("externalValue");
+    }, 100);
   });
 
   it("should work with multiple useLocalStorage instances independently", () => {

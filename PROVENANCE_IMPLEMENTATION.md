@@ -10,7 +10,8 @@ This document summarizes the implementation of NPM package provenance for the cr
 - **Changes**:
   - Added OIDC token permissions (`id-token: write`, `contents: read`)
   - Updated to use `actions/checkout@v4` and `actions/setup-node@v4`
-  - Changed from `npm install` to `npm ci` for more reliable builds
+  - Added pnpm setup for proper package manager support
+  - Changed from `npm ci` to `pnpm install --frozen-lockfile` for reliable builds
   - Added `--provenance` flag to `npm publish` command
 
 ### 2. Enhanced Package Metadata

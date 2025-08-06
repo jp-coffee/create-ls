@@ -6,13 +6,14 @@ This document summarizes the implementation of NPM package provenance for the cr
 
 ### 1. Updated GitHub Actions Workflow
 
-- **File**: `.github/workflows/publish.yml`
+- **File**: `.github/workflows/publish-provenance.yml`
 - **Changes**:
   - Added OIDC token permissions (`id-token: write`, `contents: read`)
   - Updated to use `actions/checkout@v4` and `actions/setup-node@v4`
   - Added pnpm setup for proper package manager support
   - Changed from `npm ci` to `pnpm install --frozen-lockfile` for reliable builds
   - Added `--provenance` flag to `npm publish` command
+  - Renamed workflow to bypass GitHub Actions caching issues
 
 ### 2. Enhanced Package Metadata
 
@@ -92,7 +93,7 @@ npm run verify-provenance
 
 ### Modified Files
 
-- `.github/workflows/publish.yml` - Updated with provenance support
+- `.github/workflows/publish-provenance.yml` - Updated with provenance support
 - `package.json` - Enhanced metadata and added verification script
 - `README.md` - Added security and provenance section
 

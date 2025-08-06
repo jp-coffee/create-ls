@@ -42,4 +42,4 @@ jobs:
       - name: Verify provenance
         run: |
           echo "Package published with provenance. Users can verify with:"
-          echo "npm audit signatures" 
+          echo "npm audit signatures"

@@ -26,6 +26,8 @@ Copy the workflow template from `docs/workflow-templates/publish-with-provenance
 
 **Note**: The template uses pnpm. If your project uses npm, replace the pnpm commands with `npm ci` and `npm run build`.
 
+**Important**: Make sure your lockfile (`pnpm-lock.yaml` for pnpm or `package-lock.json` for npm) is committed to the repository and not in `.gitignore`.
+
 ```yaml
 name: Publish to NPM with Provenance
 

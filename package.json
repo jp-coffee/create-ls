@@ -1,7 +1,7 @@
 {
   "name": "create-ls",
   "displayName": "Create React Local Storage State",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "description": "A simple state manager for local storage in React applications.",
   "publishConfig": {
     "access": "public",
@@ -14,11 +14,21 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/jp-coffee/create-ls.git"
+    "url": "git+https://github.com/jp-coffee/create-ls.git"
   },
   "bugs": {
     "url": "https://github.com/jp-coffee/create-ls/issues"
   },
+  "homepage": "https://github.com/jp-coffee/create-ls#readme",
+  "keywords": [
+    "react",
+    "local-storage",
+    "state-management",
+    "hooks",
+    "persistent-state",
+    "cross-tab-sync",
+    "real-time-sync"
+  ],
   "files": [
     "dist"
   ],
@@ -36,7 +46,8 @@
     "prebuild": "npm run clean",
     "test": "vitest run",
     "test:watch": "vitest --watch",
-    "typecheck": "tsc --noEmit"
+    "typecheck": "tsc --noEmit",
+    "verify-provenance": "./scripts/verify-provenance.sh"
   },
   "devDependencies": {
     "@testing-library/jest-dom": "^6.6.3",

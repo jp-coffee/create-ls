@@ -1,4 +1,4 @@
-name: Publish to NPM
+name: Publish to NPM with Provenance
 
 on:
   release:
@@ -33,3 +33,14 @@ jobs:
         env:
           NODE_AUTH_TOKEN: ${{ secrets.PUBLISH_TOKEN }}
         run: npm publish --provenance
+
+      - name: Verify provenance (optional)
+        run: |
+          echo "Package published with provenance. Users can verify with:"
+          echo "npm audit signatures"
+
+# Instructions for use:
+# 1. Copy this file to .github/workflows/publish.yml in your package
+# 2. Update the node-version if needed
+# 3. Ensure your PUBLISH_TOKEN secret is configured
+# 4. Make sure your package.json has the correct repository URL

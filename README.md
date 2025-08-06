@@ -16,6 +16,18 @@
 - 📡 **Cross-Tab Communication** – Sync updates across different tabs/windows.
 - 🚫 **No External State Management** – Eliminate the need for Redux, Context API, or Zustand.
 
+## 🔒 Security & Provenance
+
+This package is published with NPM package provenance, which provides cryptographic proof that this package was built from the source code in this repository using the GitHub Actions workflow.
+
+To verify the provenance of this package:
+
+```bash
+npm audit signatures
+```
+
+This will verify that the package was signed by the trusted GitHub Actions environment and matches the source code in this repository.
+
 ## 📦 Getting Started
 
 ### Installation

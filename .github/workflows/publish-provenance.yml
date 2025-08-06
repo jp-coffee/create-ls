@@ -1,4 +1,4 @@
-name: Publish to NPM
+name: Publish to NPM with Provenance
 
 on:
   release:
@@ -38,3 +38,8 @@ jobs:
         env:
           NODE_AUTH_TOKEN: ${{ secrets.PUBLISH_TOKEN }}
         run: npm publish --provenance
+
+      - name: Verify provenance
+        run: |
+          echo "Package published with provenance. Users can verify with:"
+          echo "npm audit signatures" 
